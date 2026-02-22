@@ -23,6 +23,12 @@ Now you have a clean local instance ready to use.
 npm install
 ```
 
+## Optional: Install Playwright CLI (for `/screenshot-design`)
+
+```bash
+npm install -g @playwright/cli@latest
+```
+
 ## Start the Dev Server
 
 ```bash
@@ -31,15 +37,23 @@ npm run dev
 
 Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-## Open Claude Code
+## Open OpenCode
 
-In the same project directory, start Claude Code:
+In the same project directory, start OpenCode:
 
 ```bash
-claude
+opencode
 ```
 
 You're ready to start designing. Run `/product-vision` to begin defining your product.
+
+Design OS command templates are stored in `.opencode/commands/` and can be customized per project.
+
+Optional hard-cutover setting (disables Claude compatibility fallbacks in OpenCode):
+
+```bash
+export OPENCODE_DISABLE_CLAUDE_CODE=1
+```
 
 ---
 

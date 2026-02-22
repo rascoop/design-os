@@ -47,7 +47,7 @@ See [Usage](usage.md) for the full workflow.
 
 ## Compatibility
 
-- Works with any AI coding agent: Claude Code, Cursor, Copilot, or anything that can implement from a handoff
+- Works with any AI coding agent: OpenCode, Cursor, Copilot, or anything that can implement from a handoff
 - Your frontend needs React and Tailwind CSS
 - Your backend can be anything—Rails, Laravel, Next.js, Python, whatever
 

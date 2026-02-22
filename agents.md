@@ -37,7 +37,7 @@ Use `/product-roadmap`, `/data-shape` individually to update those files after i
 
 ### 2. Design System (`/design-tokens`)
 Choose your color palette (from Tailwind) and typography (from Google Fonts). These tokens are applied to all screen designs.
-**Output:** `product/design-system/colors.json`, `product/design-system/typography.json`
+**Output:** `product/design-system/colors.json`, `product/design-system/typography.json`, `product/design-system/style-notes.md`
 
 ### 3. Application Shell (`/design-shell`)
 Design the persistent navigation and layout that wraps all sections.
@@ -67,7 +67,8 @@ product/                           # Product definition (portable)
 │
 ├── design-system/                 # Design tokens
 │   ├── colors.json                # { primary, secondary, neutral }
-│   └── typography.json            # { heading, body, mono }
+│   ├── typography.json            # { heading, body, mono }
+│   └── style-notes.md             # Visual density/radius/motion/chrome notes
 │
 ├── shell/                         # Application shell
 │   └── spec.md                    # Shell specification
@@ -123,6 +124,8 @@ When creating screen designs, follow these guidelines:
 - **Light & Dark Mode**: Use `dark:` variants for all colors. Test that all UI elements are visible and readable in both modes.
 
 - **Use Design Tokens**: When design tokens are defined, apply the product's color palette and typography. Otherwise, fall back to `stone` for neutrals and `lime` for accents.
+
+- **Use Style Notes**: If `product/design-system/style-notes.md` exists, apply its density, radius, motion, contrast, and chrome guidance consistently.
 
 - **Props-Based Components**: All screen design components must accept data and callbacks via props. Never import data directly in exportable components.
 
@@ -210,3 +213,28 @@ The Design OS application itself uses a "Refined Utility" aesthetic:
 - **Layout**: Maximum 800px content width, generous whitespace
 - **Cards**: Minimal borders (1px), subtle shadows, generous padding
 - **Motion**: Subtle fade-ins (200ms), no bouncy animations
+
+---
+
+## OpenCode Skills in This Repo
+
+Project-local skills are located in `.opencode/skills/`:
+
+- `frontend-design` — Distinctive, production-grade visual design
+- `prd-discovery` — Deeper discovery questioning for PRD quality
+- `app-design-patterns` — Application archetypes and UI option tradeoffs
+
+Installed ecosystem skills are located in `.agents/skills/`:
+
+- `playwright-cli` — Microsoft Playwright CLI browser automation workflow
+- `web-design-guidelines` — Vercel Web Interface Guidelines compliance review
+- `tailwind-design-system` — Tailwind v4 design-system implementation patterns
+- `design-system-patterns` — Token/theming/component architecture guidance
+
+When relevant, load these skills explicitly with the `skill` tool before generating artifacts.
+
+When installing/updating skills with the Skills CLI, target OpenCode explicitly:
+
+```bash
+npx skills add <source> --skill <name> -a opencode -y
+```

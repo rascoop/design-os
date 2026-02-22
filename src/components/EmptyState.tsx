@@ -87,7 +87,7 @@ export function EmptyState({ type }: EmptyStateProps) {
           </p>
           <div className="bg-stone-100 dark:bg-stone-800 rounded-md px-4 py-2.5 w-full">
             <p className="text-xs text-stone-500 dark:text-stone-400 mb-0.5">
-              Run in Claude Code:
+              Run in OpenCode:
             </p>
             <code className="text-sm font-mono text-stone-700 dark:text-stone-300">
               {command}

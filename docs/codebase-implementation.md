@@ -5,7 +5,7 @@ After exporting your designs from Design OS, you have a complete handoff package
 ## Getting Started
 
 1. Copy the `product-plan/` folder into your target codebase
-2. Start your AI coding agent (Claude Code, Cursor, etc.)
+2. Start your AI coding agent (OpenCode, Cursor, etc.)
 3. Choose your implementation approach: one-shot or section-by-section
 
 ## Implementation Approaches

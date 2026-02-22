@@ -104,7 +104,7 @@ Screenshots are useful for:
 - Documentation and handoff materials
 - Comparing designs across sections
 
-**Requires:** Playwright MCP server. If not installed, you'll be prompted with setup instructions.
+**Requires:** Playwright CLI. Install with `npm install -g @playwright/cli@latest` if not already installed.
 
 **Creates:** `product/sections/[section-id]/[screen-name].png`
 
